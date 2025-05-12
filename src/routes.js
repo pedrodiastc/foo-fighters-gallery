@@ -7,7 +7,6 @@ import Player from "pages/Player";
 
 // COMPONENTS
 
-import NotFound from "pages/NotFound";
 import Basepage from "pages/Basepage";
 
 
@@ -20,8 +19,7 @@ function AppRoutes() {
            <Route path="/" element={<Basepage />}>
                <Route index element={<Home />} />
                <Route path="favoritos" element={<Favorits />} />
-               <Route path="player/:id" element={<Player />} /> {/* More explicit path */}
-               <Route path="*" element={<NotFound />} />
+               <Route path="player/:id" element={<Player />} /> 
            </Route>
        </Routes>
    </BrowserRouter> 
