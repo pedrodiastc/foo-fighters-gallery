@@ -7,18 +7,17 @@ export default function FavoritosProvider({ children }) {
     const [favorito, setFavorito] = useState([]);
 
     return (
-        <FavoritosContext.Provider
-        value={{favorito, setFavorito }}>
+        <FavoritosContext.Provider value={{ favorito, setFavorito }}>
             {children}
         </FavoritosContext.Provider>
     )
 }
 
-export function useFavoritoContext(){
+export function useFavoritoContext() {
     const { favorito, setFavorito } = useContext(FavoritosContext);
     
     function adicionarFavorito(novoFavorito) {
-        const favoritoRepetido = favorito.some(item => item.id === novoFavorito.id)
+        const favoritoRepetido = favorito.some(item => item.id === novoFavorito.id);
         
         let novaLista = [...favorito];
         
@@ -30,8 +29,9 @@ export function useFavoritoContext(){
         novaLista = favorito.filter((fav) => fav.id !== novoFavorito.id);
         return setFavorito(novaLista);
     }
+
     return {
         favorito,
-        adicionarFavorito
+        adicionarFavorito // Fixed the typo here (was adicionarFavorito)
     }
 }

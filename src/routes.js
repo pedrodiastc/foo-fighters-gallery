@@ -14,24 +14,18 @@ import Basepage from "pages/Basepage";
 
 
 function AppRoutes() {
-   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}> 
-    
-          <Routes>
-            <Route path="/" element={<Basepage />}>
-
-              <Route index element={<Home />}></Route>
-              <Route path="Favoritos" element={<Favorits />}></Route>
-              <Route path=":id" element={<Player />}></Route>
-              <Route path="*" element={<NotFound />}></Route>
-
-            </Route>
-
-
-          </Routes>
-        
-    </BrowserRouter> 
-    )
+  return (
+   <BrowserRouter basename={process.env.PUBLIC_URL}> 
+       <Routes>
+           <Route path="/" element={<Basepage />}>
+               <Route index element={<Home />} />
+               <Route path="favoritos" element={<Favorits />} />
+               <Route path="player/:id" element={<Player />} /> {/* More explicit path */}
+               <Route path="*" element={<NotFound />} />
+           </Route>
+       </Routes>
+   </BrowserRouter> 
+  )
 }
 
 export default AppRoutes;

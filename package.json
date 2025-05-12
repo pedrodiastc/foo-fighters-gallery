@@ -1,7 +1,8 @@
 {
-  "name": "fav-app",
+  "name": "foo-fighters-gallery",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pedrodiastc.github.io/foo-fighters-gallery",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -17,6 +18,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
