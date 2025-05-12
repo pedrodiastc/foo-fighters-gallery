@@ -1,0 +1,11 @@
+.foter {
+  display: flex;
+  justify-content: center;
+  background-color: var(--black);
+}
+
+.foter h2 {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white);
+}
