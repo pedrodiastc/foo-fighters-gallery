@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/foo-fighters-gallery/static/css/main.42f50a0f.css",
-    "main.js": "/foo-fighters-gallery/static/js/main.20882b84.js",
+    "main.js": "/foo-fighters-gallery/static/js/main.e786ea20.js",
     "static/media/logo.png": "/foo-fighters-gallery/static/media/logo.97bd7a5c98e545db4744.png",
     "index.html": "/foo-fighters-gallery/index.html",
     "main.42f50a0f.css.map": "/foo-fighters-gallery/static/css/main.42f50a0f.css.map",
-    "main.20882b84.js.map": "/foo-fighters-gallery/static/js/main.20882b84.js.map"
+    "main.e786ea20.js.map": "/foo-fighters-gallery/static/js/main.e786ea20.js.map"
   },
   "entrypoints": [
     "static/css/main.42f50a0f.css",
-    "static/js/main.20882b84.js"
+    "static/js/main.e786ea20.js"
   ]
 }
